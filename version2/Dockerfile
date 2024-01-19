@@ -1,4 +1,4 @@
-# Use an official base image
+
 FROM python:3.9-slim
 
 # Set the working directory inside the container
