@@ -1,0 +1,16 @@
+on:
+  pull_request:
+    branches:
+      - master
+    types: [closed]
+jobs:
+  <job id>:
+    if: github.event.pull_request.merged == true
+    steps: // the rest of the code
+    - name: trigger single Job
+      uses: Kiran-dehlikar/jenkins-docker-git@master
+      with:
+        url: "http://3.109.206.238:8080/"
+        user: "admin"
+        token: ${{ secrets_TOKEN }}
+        job: "jenkins-pull-build"
