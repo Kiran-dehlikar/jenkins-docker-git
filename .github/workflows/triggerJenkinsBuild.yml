@@ -14,5 +14,5 @@ jobs:
       with:
         url: "http://3.109.206.238:8080/"
         user: "admin"
-        token: ${{ secrets_TOKEN }}
+        token: ${{ SECRETS_TOKEN }}
         job: "jenkins-pull-build"
