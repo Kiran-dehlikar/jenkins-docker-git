@@ -4,7 +4,9 @@ on:
       - master
     types: [closed]
 jobs:
-  <job id>:
+  build:
+    name: Build
+    runs-on: ubuntu
     if: github.event.pull_request.merged == true
     steps: // the rest of the code
     - name: trigger single Job
