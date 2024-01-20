@@ -7,6 +7,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu
+    if: github.event.pull_request.merged == true
     steps:
     - name:  trigger single Job
       uses: Kiran-dehlikar/jenkins-docker-git@master
