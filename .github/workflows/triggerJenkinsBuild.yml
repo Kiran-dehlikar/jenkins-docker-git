@@ -15,5 +15,5 @@ jobs:
       with:
         url: "http://65.0.71.13:8080/"
         user: "admin"
-        token: ${{ trigger_build }}
+        token: "trigger_build"
         job: "jenkins-pull-build"
